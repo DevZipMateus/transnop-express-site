@@ -1,7 +1,8 @@
 import { Users, Car, Briefcase, PartyPopper } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import vanInterior from "@/assets/van-interior.jpg";
-import sedanService from "@/assets/sedan-service.jpg";
+import van15Exterior from "@/assets/van-15-exterior.jpg";
+import van19Exterior from "@/assets/van-19-exterior.jpg";
+import sedanInterior from "@/assets/sedan-interior.jpg";
 
 const Services = () => {
   const scrollToContact = () => {
@@ -20,21 +21,21 @@ const Services = () => {
       title: "Van 15 lugares",
       description:
         "Veículos modernos e confortáveis para grupos de até 15 passageiros. Ideal para empresas e eventos corporativos.",
-      image: vanInterior,
+      image: van15Exterior,
     },
     {
       icon: Users,
       title: "Van 19 lugares",
       description:
         "Nossa frota inclui vans com capacidade para 19 passageiros, perfeitas para grupos maiores e excursões.",
-      image: vanInterior,
+      image: van19Exterior,
     },
     {
       icon: Car,
       title: "Carro sedan",
       description:
         "Transporte executivo com carros sedan para viagens corporativas e compromissos especiais.",
-      image: sedanService,
+      image: sedanInterior,
     },
   ];
 
