@@ -1,8 +1,9 @@
 import { Users, Car, Briefcase, PartyPopper } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import van15Exterior from "@/assets/van-15-exterior.jpg";
-import van19Exterior from "@/assets/van-19-exterior.jpg";
-import sedanInterior from "@/assets/sedan-interior.jpg";
+import passengersBusiness from "@/assets/passengers-business.jpg";
+import eventWedding from "@/assets/event-wedding.jpg";
+import tourismGroup from "@/assets/tourism-group.jpg";
+import driverService from "@/assets/driver-service.jpg";
 
 const Services = () => {
   const scrollToContact = () => {
@@ -21,21 +22,21 @@ const Services = () => {
       title: "Van 15 lugares",
       description:
         "Veículos modernos e confortáveis para grupos de até 15 passageiros. Ideal para empresas e eventos corporativos.",
-      image: van15Exterior,
+      image: passengersBusiness,
     },
     {
       icon: Users,
       title: "Van 19 lugares",
       description:
         "Nossa frota inclui vans com capacidade para 19 passageiros, perfeitas para grupos maiores e excursões.",
-      image: van19Exterior,
+      image: tourismGroup,
     },
     {
       icon: Car,
       title: "Carro sedan",
       description:
         "Transporte executivo com carros sedan para viagens corporativas e compromissos especiais.",
-      image: sedanInterior,
+      image: driverService,
     },
   ];
 
@@ -132,6 +133,34 @@ const Services = () => {
                 </p>
               </div>
             ))}
+          </div>
+        </div>
+
+        {/* Special Events Highlight */}
+        <div className="mt-16 relative rounded-2xl overflow-hidden shadow-2xl animate-fade-in">
+          <img
+            src={eventWedding}
+            alt="Transporte para casamentos e eventos especiais"
+            className="w-full h-96 object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/95 to-primary/60 flex items-center">
+            <div className="container mx-auto px-8">
+              <div className="max-w-2xl">
+                <h3 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+                  Eventos especiais merecem transporte especial
+                </h3>
+                <p className="text-xl text-white/95 mb-6">
+                  Casamentos, formaturas, aniversários e eventos corporativos com todo conforto e elegância
+                </p>
+                <Button
+                  onClick={scrollToContact}
+                  size="lg"
+                  className="bg-accent hover:bg-accent/90 text-accent-foreground text-lg px-8 py-6"
+                >
+                  Solicitar orçamento para evento
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
