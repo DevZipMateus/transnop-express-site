@@ -1,7 +1,7 @@
 import { Users, Car, Briefcase, PartyPopper } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import passengersBusiness from "@/assets/passengers-business.jpg";
-import eventWedding from "@/assets/event-wedding.jpg";
+import weddingTransport from "@/assets/wedding-transport.jpg";
 import tourismGroup from "@/assets/tourism-group.jpg";
 import driverService from "@/assets/driver-service.jpg";
 
@@ -139,7 +139,7 @@ const Services = () => {
         {/* Special Events Highlight */}
         <div className="mt-16 relative rounded-2xl overflow-hidden shadow-2xl animate-fade-in">
           <img
-            src={eventWedding}
+            src={weddingTransport}
             alt="Transporte para casamentos e eventos especiais"
             className="w-full h-96 object-cover"
           />
