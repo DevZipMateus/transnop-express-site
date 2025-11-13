@@ -1,7 +1,7 @@
 import { Users, Car, Briefcase, PartyPopper } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import passengersBusiness from "@/assets/passengers-business.jpg";
-import weddingTransport from "@/assets/wedding-transport.jpg";
+import corporateEvent from "@/assets/corporate-event.jpg";
 import tourismGroup from "@/assets/tourism-group.jpg";
 import driverService from "@/assets/driver-service.jpg";
 
@@ -139,18 +139,18 @@ const Services = () => {
         {/* Special Events Highlight */}
         <div className="mt-16 relative rounded-2xl overflow-hidden shadow-2xl animate-fade-in">
           <img
-            src={weddingTransport}
-            alt="Transporte para casamentos e eventos especiais"
+            src={corporateEvent}
+            alt="Transporte para eventos corporativos e especiais"
             className="w-full h-96 object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary/95 to-primary/60 flex items-center">
             <div className="container mx-auto px-8">
               <div className="max-w-2xl">
                 <h3 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-                  Eventos especiais merecem transporte especial
+                  Eventos especiais merecem transporte de excelência
                 </h3>
                 <p className="text-xl text-white/95 mb-6">
-                  Casamentos, formaturas, aniversários e eventos corporativos com todo conforto e elegância
+                  Eventos corporativos, congressos, casamentos e celebrações com todo conforto, pontualidade e profissionalismo
                 </p>
                 <Button
                   onClick={scrollToContact}
