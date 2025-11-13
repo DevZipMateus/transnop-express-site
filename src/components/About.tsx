@@ -1,4 +1,6 @@
 import { Target, Eye, Heart } from "lucide-react";
+import safetyCheck from "@/assets/safety-check.jpg";
+import technology from "@/assets/technology.jpg";
 
 const About = () => {
   const values = [
@@ -52,6 +54,37 @@ const About = () => {
               </p>
             </div>
           ))}
+        </div>
+
+        {/* Visual Gallery */}
+        <div className="mt-16 grid md:grid-cols-2 gap-8">
+          <div className="relative rounded-2xl overflow-hidden shadow-xl group animate-fade-in">
+            <img
+              src={safetyCheck}
+              alt="Inspeção de segurança da frota TRANSNOP"
+              className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent flex items-end p-6">
+              <div className="text-white">
+                <h4 className="text-xl font-bold mb-2">Segurança certificada</h4>
+                <p className="text-white/90">Manutenção preventiva e inspeções rigorosas</p>
+              </div>
+            </div>
+          </div>
+          
+          <div className="relative rounded-2xl overflow-hidden shadow-xl group animate-fade-in" style={{ animationDelay: "100ms" }}>
+            <img
+              src={technology}
+              alt="Tecnologia e GPS nos veículos TRANSNOP"
+              className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent flex items-end p-6">
+              <div className="text-white">
+                <h4 className="text-xl font-bold mb-2">Tecnologia avançada</h4>
+                <p className="text-white/90">GPS e sistemas modernos de navegação</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
