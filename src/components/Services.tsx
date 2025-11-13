@@ -1,6 +1,6 @@
 import { Users, Car, Briefcase, PartyPopper } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import passengersBusiness from "@/assets/passengers-business.jpg";
+import van15Professional from "@/assets/van-15-professional.jpg";
 import corporateEvent from "@/assets/corporate-event.jpg";
 import tourismGroup from "@/assets/tourism-group.jpg";
 import driverService from "@/assets/driver-service.jpg";
@@ -22,7 +22,7 @@ const Services = () => {
       title: "Van 15 lugares",
       description:
         "Veículos modernos e confortáveis para grupos de até 15 passageiros. Ideal para empresas e eventos corporativos.",
-      image: passengersBusiness,
+      image: van15Professional,
     },
     {
       icon: Users,
